@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: dubbo-employee-consumer
+dubbo:
+  scan:
+    base-packages: com.hdax.dubbo.employee.service
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    group: hdax
+
+server:
+  port: 8077
